@@ -18,16 +18,19 @@ var lastNum = '19'
 
 var psw = userName + userSurname + userColor + lastNum ;
 
-//console log
-
-console.log(psw);
+//create h3 element inside main div
 var node = document.createElement('h3');
 
-var text = document.createTextNode(psw);
+//create text inside new element
 
+var text = document.createTextNode(psw);
 node.appendChild(text);
 
+//append new html elements inside main div
+
 document.querySelector('.container').appendChild(node);
+
+//this function is linked to buttom onclick for create a new password
 
 function newPassword(){
   var userName = prompt('inserisci il tuo nome');
